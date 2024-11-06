@@ -1,8 +1,7 @@
 document.querySelectorAll(".portrait").forEach((img) => {
   img.addEventListener("mouseenter", (event) => {
     const hoveredPosition = event.target.getAttribute("data-position");
-
-    // Update the hovered image to look directly at the user
+    
     if (hoveredPosition === "top-left") {
       event.target.src = "middle-center.jpeg";
       document.querySelector('[data-position="top-center"]').src =
